@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mountains</string>
+    <string name="registration_button">Sign In</string>
+    <string name="empty_error_message"> </string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_password">Password is less then 6 characters</string>
+    <string name="invalid_login">Please, create your login</string>
+    <string name="title_text">Please SignIn/SignUp</string>
+</resources>
