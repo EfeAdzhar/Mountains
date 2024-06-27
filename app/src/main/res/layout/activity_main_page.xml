@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-           <include layout="@layout/travel_frame_layout"/>
+           <include layout="@layout/travel_constraint_layout"/>
 
         </LinearLayout>
 
@@ -47,5 +47,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scroll_view">
 
+        <ImageView
+            android:id="@+id/search_bar_image_view"
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+
+            android:src="@drawable/account" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

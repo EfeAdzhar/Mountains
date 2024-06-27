@@ -6,4 +6,11 @@
     <string name="invalid_password">Password is less then 6 characters</string>
     <string name="invalid_login">Please, create your login</string>
     <string name="title_text">Please SignIn/SignUp</string>
+    <string name="more_button">Button to see more in main page</string>
+    <string name="amount_of_reviews">(12)</string>
+    <string name="amount_of_hikes">(32 походи)</string>
+    <string name="price">1500 UA</string>
+    <string name="price_label">Вартість:</string>
+    <string name="group_type_string">Тип групи</string>
+    <string name="difficulty_string">Складність</string>
 </resources>
