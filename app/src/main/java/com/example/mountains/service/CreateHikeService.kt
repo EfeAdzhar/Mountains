@@ -1,11 +1,11 @@
 package com.example.mountains.service
 
-import com.example.mountains.model.User
+import com.example.mountains.model.PersonalHike
 import com.example.mountains.service.interfaces.Crud
 
-class UserService : Crud<User> {
+class CreateHikeService : Crud<PersonalHike> {
 
-    override fun create(model: User) {
+    override fun create(model: PersonalHike) {
         TODO("Not yet implemented")
     }
 
@@ -17,7 +17,7 @@ class UserService : Crud<User> {
         TODO("Not yet implemented")
     }
 
-    override fun update(id: String, newModel: User) {
+    override fun update(id: String, newModel: PersonalHike) {
         TODO("Not yet implemented")
     }
 }

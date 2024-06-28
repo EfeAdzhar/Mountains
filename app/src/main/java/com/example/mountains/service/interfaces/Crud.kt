@@ -1,4 +1,4 @@
-package com.example.mountains.service
+package com.example.mountains.service.interfaces
 
 interface Crud<E> {
     fun create(model : E)

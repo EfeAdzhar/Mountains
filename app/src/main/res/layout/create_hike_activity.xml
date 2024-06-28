@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_hike_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="296dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="46dp"
+        android:gravity="center"
+        android:text="Давай налаштуємо параметри Твого походу"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:text="Скасувати"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="310dp"
+        android:text="Складність"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/difficulty_toggle_button_group"
+        android:layout_width="297dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/easy_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Проста"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <Button
+            android:id="@+id/medium_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Помірна"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <Button
+            android:id="@+id/hard_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Важка"
+            tools:layout_editor_absoluteX="276dp"
+            tools:layout_editor_absoluteY="230dp" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/gender_toggle_button_group"
+        android:layout_width="341dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/mixed_group"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Будь яка"
+            tools:layout_editor_absoluteX="76dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <Button
+            android:id="@+id/female_group"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Жіноча"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+        <Button
+            android:id="@+id/male_group"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="145dp"
+            android:layout_height="match_parent"
+            android:text="Чоловіча"
+            tools:layout_editor_absoluteX="276dp"
+            tools:layout_editor_absoluteY="230dp" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="282dp"
+        android:text="Стать учасників"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_toggle_button_group" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="312dp"
+        android:text="Тип походу"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_toggle_button_group" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/price_toggle_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <Button
+            android:id="@+id/commercial_hike"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="КОМЕРЦІЙНА" />
+
+        <Button
+            android:id="@+id/free_hike"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="БЕЗКОШТОВНО" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <EditText
+        android:id="@+id/price_edit_view"
+        android:layout_width="288dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="69dp"
+        android:alpha="0"
+        android:hint="Ціна"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_toggle_button_group" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
