@@ -13,7 +13,6 @@ import com.example.mountains.R
 class MainPageActivity : AppCompatActivity() {
 
     private lateinit var linearLayout: LinearLayout
-    private lateinit var travelConstraintLayout: ConstraintLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,8 +27,8 @@ class MainPageActivity : AppCompatActivity() {
         val inflater = LayoutInflater.from(this)
 
         for(i in 0..4) {
-            val travelFrameLayout = inflater.inflate(R.layout.travel_constraint_layout, linearLayout, false)
-            linearLayout.addView(travelFrameLayout)
+            val travelLayout = inflater.inflate(R.layout.travel_constraint_layout, linearLayout, false)
+            linearLayout.addView(travelLayout)
         }
     }
 }

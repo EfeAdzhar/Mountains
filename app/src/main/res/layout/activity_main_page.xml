@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".view.MainPageActivity">
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/upper_layout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -21,23 +21,35 @@
             android:layout_width="97dp"
             android:layout_height="54dp"
             android:layout_gravity="center|top"
-            android:src="@drawable/happy_icon" />
+            android:layout_marginStart="157dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginBottom="46dp"
+            android:src="@drawable/happy_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_image_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/add_image_view"
             android:layout_width="35dp"
             android:layout_height="36dp"
             android:layout_gravity="end"
-            android:src="@drawable/baseline_add_24" />
+            android:layout_marginBottom="64dp"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:id="@+id/scroll_view"
-        android:layout_width="409dp"
-        android:layout_height="546dp"
+        android:layout_width="399dp"
+        android:layout_height="573dp"
         app:layout_constraintBottom_toTopOf="@+id/under_layout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/upper_layout">
 
@@ -45,18 +57,24 @@
             android:id="@+id/linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
 
-           <include layout="@layout/travel_constraint_layout"/>
+            <include
+                layout="@layout/travel_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 
     </ScrollView>
 
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/under_layout"
-        android:layout_width="409dp"
-        android:layout_height="83dp"
+        android:layout_width="418dp"
+        android:layout_height="57dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,17 +82,31 @@
 
         <ImageView
             android:id="@+id/search_bar_image_view"
-            android:layout_width="199dp"
-            android:layout_height="match_parent"
+            android:layout_width="197dp"
+            android:layout_height="53dp"
             android:layout_gravity="start"
-            android:src="@drawable/search" />
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
+            android:layout_width="206dp"
+            android:layout_height="52dp"
             android:layout_gravity="end"
 
-            android:src="@drawable/account" />
-    </FrameLayout>
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/search_bar_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
