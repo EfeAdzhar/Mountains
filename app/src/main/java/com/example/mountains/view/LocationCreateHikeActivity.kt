@@ -12,7 +12,7 @@ import com.example.mountains.R
 
 class LocationCreateHikeActivity : AppCompatActivity() {
 
-    private lateinit var cancelButton : Button
+    private lateinit var cancelButton : TextView
     private lateinit var backTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
