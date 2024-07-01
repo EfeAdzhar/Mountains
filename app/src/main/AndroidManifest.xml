@@ -17,16 +17,11 @@
             android:exported="false"
             android:theme="@style/Theme.Mountains" />
         <activity
-            android:name=".CreateHikeActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Mountains" />
-        <activity
-            android:name=".create_hike_activity"
-            android:exported="false"
-            android:theme="@style/Theme.Mountains" />
-        <activity
             android:name=".view.MainPageActivity"
             android:exported="false" />
+        <activity android:name=".view.LocationCreateHikeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Mountains" />
         <activity
             android:name=".view.RegistrationActivity"
             android:exported="true">
@@ -37,5 +32,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

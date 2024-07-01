@@ -15,12 +15,14 @@
         android:layout_marginEnd="46dp"
         android:gravity="center"
         android:text="Давай налаштуємо параметри Твого походу"
+        android:textSize="25dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/cancel_text_view"/>
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/cancel_text_view"
         android:layout_width="94dp"
         android:layout_height="29dp"
         android:layout_marginStart="19dp"
@@ -45,6 +47,7 @@
         android:id="@+id/difficulty_toggle_button_group"
         android:layout_width="297dp"
         android:layout_height="36dp"
+        android:gravity="center"
         android:layout_marginStart="67dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="47dp"
@@ -59,6 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Проста"
+            android:textSize="10dp"
             tools:layout_editor_absoluteX="76dp"
             tools:layout_editor_absoluteY="230dp" />
 
@@ -68,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Помірна"
+            android:textSize="10dp"
             tools:layout_editor_absoluteX="171dp"
             tools:layout_editor_absoluteY="230dp" />
 
@@ -77,6 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Важка"
+            android:textSize="10dp"
             tools:layout_editor_absoluteX="276dp"
             tools:layout_editor_absoluteY="230dp" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
@@ -85,6 +91,7 @@
         android:id="@+id/gender_toggle_button_group"
         android:layout_width="341dp"
         android:layout_height="35dp"
+        android:gravity="center"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -99,6 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Будь яка"
+            android:textSize="10dp"
             tools:layout_editor_absoluteX="76dp"
             tools:layout_editor_absoluteY="230dp" />
 
@@ -108,6 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Жіноча"
+            android:textSize="10dp"
             tools:layout_editor_absoluteX="171dp"
             tools:layout_editor_absoluteY="230dp" />
 
@@ -117,6 +126,7 @@
             android:layout_width="145dp"
             android:layout_height="match_parent"
             android:text="Чоловіча"
+            android:textSize="10dp"
             tools:layout_editor_absoluteX="276dp"
             tools:layout_editor_absoluteY="230dp" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
@@ -147,41 +157,126 @@
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/price_toggle_button_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="241dp"
+        android:layout_height="35dp"
         android:layout_marginStart="67dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17">
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:singleSelection="true">
 
         <Button
             android:id="@+id/commercial_hike"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="КОМЕРЦІЙНА" />
+            android:text="КОМЕРЦІЙНЕ"
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/free_hike"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="БЕЗКОШТОВНО" />
+            android:text="БЕЗКОШТОВНО"
+            android:textSize="10dp" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
     <EditText
         android:id="@+id/price_edit_view"
         android:layout_width="288dp"
-        android:layout_height="22dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="69dp"
+        android:textSize="12dp"
+        android:gravity="center"
         android:alpha="0"
         android:hint="Ціна"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/price_toggle_button_group" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="114dp"
+        android:text="Трансфер з точки збору до точки старту"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_edit_view" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/transfer_toggle_button_group"
+        android:layout_width="410dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="71dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/next_step_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:singleSelection="true"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <Button
+            android:id="@+id/solely_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="САМОСТІЙНО"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/fueд_only_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ТІЛЬКИ ПАЛЬНЕ"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/free_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="БЕЗКОШТОВНО"
+            android:textSize="10dp" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/next_step_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/shamrock_green"
+        android:gravity="center"
+        android:text="НАСТУПНИЙ КРОК"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/error_message_text"
+        android:layout_width="255dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="28dp"
+        android:alpha="0"
+        android:gravity="right|center"
+        android:text=""
+        android:textColor="@color/bloody_red"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfer_toggle_button_group" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
