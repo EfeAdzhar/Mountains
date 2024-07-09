@@ -7,7 +7,7 @@
     <string name="invalid_login">Please, create your login</string>
     <string name="title_text">Please SignIn/SignUp</string>
     <string name="more_button">Button to see more in main page</string>
-    <string name="hike_chornomorsky_hrebt">Похід Чорноморським Хребот</string>
+    <string name="hike_chornomorsky_hrebt">Похід Чорноморським Хребтом</string>
     <string name="amount_of_reviews">(12)</string>
     <string name="amount_of_hikes">(32 походи)</string>
     <string name="price">1500 UA</string>
@@ -38,5 +38,6 @@
     <string name="invalid_price">Не є валідним цінником</string>
     <string name="name_of_hike">Назва походу</string>
     <string name="name_of_hike_string">Назва походу</string>
+    <string name="test_road">с. Тетеря - г. Хомяк - Полонина Хом\'яків - г. Синяк - г. Малий Гонгар - Буковель (25 км)</string>
 
 </resources>

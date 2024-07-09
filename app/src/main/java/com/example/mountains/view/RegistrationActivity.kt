@@ -15,6 +15,7 @@ import com.example.mountains.model.User
 import com.example.mountains.service.UserPasswordService
 import com.example.mountains.service.UserService
 import com.example.mountains.service.helper.RegistrationHelper
+import com.example.mountains.service.helper.UserPasswordHelper
 import java.util.UUID
 
 class RegistrationActivity : AppCompatActivity() {
@@ -22,12 +23,11 @@ class RegistrationActivity : AppCompatActivity() {
     private lateinit var userPassword: EditText
     private lateinit var userLogin: EditText
     private lateinit var errorMessage: TextView
-    private lateinit var registrationButton: Button
-    private lateinit var skipButton: Button
+    private lateinit var registrationButton: TextView
+    private lateinit var skipButton: TextView
     private var registrationHelper = RegistrationHelper()
     private val service: UserService = UserService()
     private var passwordService = UserPasswordService()
-    //private var userPasswordHelper = UserPasswordHelper()
     private var userEmailString: String = ""
     private var userLoginString: String = ""
     private var userPasswordString: String = ""
@@ -93,14 +93,12 @@ class RegistrationActivity : AppCompatActivity() {
                     validUserLogin = true
 
                     val user = User(
-                        UUID.randomUUID().toString(), userLoginString, userEmailString
-                    )
+                        UUID.randomUUID().toString(), userLoginString, userEmailString)
 
                     //TODO(Ceaser Chifr works incorrectly (should be second argument in dto))
                     val passwordDto = UserPasswordDto(
                         user.id,
-                        userPasswordString
-                    )
+                       userPasswordString)
                     //TODO(services)
                     //service.create(user)
                     //passwordService.saveSecuredPass(passwordDto)

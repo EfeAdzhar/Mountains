@@ -4,5 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#F2F207</color>
     <color name="bloody_red">#A30A0A</color>
+    <color name="red">#E21717</color>
     <color name="shamrock_green">#009E60</color>
 </resources>

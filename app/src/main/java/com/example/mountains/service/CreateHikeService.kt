@@ -1,15 +1,15 @@
 package com.example.mountains.service
 
 import com.example.mountains.model.PersonalHike
-import com.example.mountains.service.interfaces.Crud
+import com.example.mountains.common.Crud
+import com.example.mountains.repository.UserRepository
 
 class CreateHikeService : Crud<PersonalHike> {
 
     override fun create(model: PersonalHike) {
-        TODO("Not yet implemented")
     }
 
-    override fun read(id: String) {
+    override fun read(id: String) : PersonalHike? {
         TODO("Not yet implemented")
     }
 
